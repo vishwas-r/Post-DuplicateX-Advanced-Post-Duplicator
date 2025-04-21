@@ -61,11 +61,11 @@ After installation and activation:
 
 | Settings Page | Post List View |
 |:---:|:---:|
-| ![Settings Page](assets/screenshot-1.png) | ![Post List](assets/screenshot-2.png) |
+| ![Settings Page](screenshots/screenshot-1.png) | ![Page/Post List](screenshots/screenshot-2.png) |
 
 | Classic Editor | Block Editor |
 |:---:|:---:|
-| ![Classic Editor](assets/screenshot-3.png) | ![Block Editor](assets/screenshot-4.png) |
+| ![Classic Editor](screenshots/screenshot-3.png) | ![Block Editor](screenshots/screenshot-4.png) |
 
 ## Configuration Options
 
