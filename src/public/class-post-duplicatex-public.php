@@ -1,6 +1,6 @@
 <?php
 
-class Post_DuplicateX_Public {
+class Post_DuplicateX51_Public {
     private $plugin_name;
     private $version;
 
@@ -17,6 +17,22 @@ class Post_DuplicateX_Public {
         // Add frontend scripts if needed
     }
 
+    public function add_duplicate_post_links() {
+        // Check if user has permission
+        if (!$this->user_can_duplicate()) {
+            return;
+        }
+    
+        $post_types = get_option('pdx_post_types', array('post' => 'post', 'page' => 'page'));
+        $link_locations = get_option('pdx_link_location', array('row' => 'row', 'admin_bar' => 'admin_bar', 'classic_editor' => 'classic_editor', 'block_editor' => 'block_editor'));
+
+        // Add admin bar link
+        if (isset($link_locations['admin_bar']) && $link_locations['admin_bar'] === 'admin_bar') {
+            // Use priority 100 to ensure it's added after WordPress core items
+            add_action('admin_bar_menu', array($this, 'add_duplicate_admin_bar_link'), 90);
+        }
+    }
+
     public function add_duplicate_admin_bar_link($wp_admin_bar) {
         // Check if user has permission
         if (!$this->user_can_duplicate()) {
@@ -25,14 +41,13 @@ class Post_DuplicateX_Public {
         
         global $post;
 
-        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verified in duplicate_post_action(); $_GET['post'] only used to generate nonce-protected URL.
-        if (!$post) {
-            // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verified in duplicate_post_action(); $_GET['post'] sanitized and used for URL generation only.
-            $post_id = isset($_GET['post']) ? intval($_GET['post']) : 0;
-            if ($post_id > 0) {
-                $post = get_post($post_id);
+        if (!isset($post) || !is_a($post, 'WP_Post')) {
+            if (is_singular()) {
+                $post = get_post(get_the_ID());
+            } else {
+                return;
             }
-        }
+        }        
         
         if (!$post) {
             return;

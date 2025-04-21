@@ -1,7 +1,6 @@
-
 <?php
 
-class Post_DuplicateX {
+class Post_DuplicateX51 {
     protected $loader;
     protected $plugin_name;
     protected $version;
@@ -11,7 +10,6 @@ class Post_DuplicateX {
         $this->plugin_name = 'post-duplicatex';
         
         $this->load_dependencies();
-        $this->set_locale();
         $this->define_admin_hooks();
         $this->define_public_hooks();
     }
@@ -21,21 +19,11 @@ class Post_DuplicateX {
         require_once POST_DUPLICATEX_PLUGIN_DIR . 'admin/class-post-duplicatex-admin.php';
         require_once POST_DUPLICATEX_PLUGIN_DIR . 'public/class-post-duplicatex-public.php';
 
-        $this->loader = new Post_DuplicateX_Loader();
-    }
-
-    private function set_locale() {
-        add_action('plugins_loaded', function() {
-            load_plugin_textdomain(
-                'post-duplicatex',
-                false,
-                dirname(plugin_basename(POST_DUPLICATEX_PLUGIN_DIR)) . '/languages/'
-            );
-        });
+        $this->loader = new Post_DuplicateX51_Loader();
     }
 
     private function define_admin_hooks() {
-        $plugin_admin = new Post_DuplicateX_Admin($this->get_plugin_name(), $this->get_version());
+        $plugin_admin = new Post_DuplicateX51_Admin($this->get_plugin_name(), $this->get_version());
         
         $this->loader->add_action('admin_enqueue_scripts', $plugin_admin, 'enqueue_styles');
         $this->loader->add_action('admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts');
@@ -50,15 +38,19 @@ class Post_DuplicateX {
         
         // Add links to plugins page
         $this->loader->add_filter('plugin_action_links_' . plugin_basename(POST_DUPLICATEX_PLUGIN_DIR . 'post-duplicatex.php'), $plugin_admin, 'add_action_links');
+        
+        // Add duplicate link to admin bar in admin context
+        $this->loader->add_action('admin_bar_menu', $plugin_admin, 'add_duplicate_admin_bar_link', 90);
     }
 
     private function define_public_hooks() {
-         $plugin_public = new Post_DuplicateX_Public($this->get_plugin_name(), $this->get_version());
+        $plugin_public = new Post_DuplicateX51_Public($this->get_plugin_name(), $this->get_version());
         
-         $this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_styles');
-         $this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_scripts');
-
-         $this->loader->add_action('admin_bar_menu', $plugin_public, 'add_duplicate_admin_bar_link', 90);
+        $this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_styles');
+        $this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_scripts');
+        
+        // Add duplicate link to admin bar in frontend context
+        $this->loader->add_action('admin_bar_menu', $plugin_public, 'add_duplicate_admin_bar_link', 90);
     }
 
     public function run() {

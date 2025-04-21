@@ -1,6 +1,6 @@
 <?php
 
-class Post_DuplicateX_Admin {
+class Post_DuplicateX51_Admin {
     private $plugin_name;
     private $version;
 
@@ -224,9 +224,8 @@ class Post_DuplicateX_Admin {
         
         global $post;
 
-        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verified in duplicate_post_action(); $_GET['post'] only used to generate nonce-protected URL.
         if (!$post) {
-            // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verified in duplicate_post_action(); $_GET['post'] sanitized and used for URL generation only.
+            // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Verified via wp_verify_nonce().
             $post_id = isset($_GET['post']) ? intval($_GET['post']) : 0;
             if ($post_id > 0) {
                 $post = get_post($post_id);

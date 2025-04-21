@@ -1,7 +1,7 @@
 
 <?php
 
-class Post_DuplicateX_Activator {
+class Post_DuplicateX51_Activator {
     public static function activate() {
         // Default settings
         $default_options = array(
