@@ -1,12 +1,13 @@
 # Post DuplicateX
 
-![Post DuplicateX](images/icon.png)
-
 [![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/post-duplicatex.svg)](https://wordpress.org/plugins/post-duplicatex/)
 [![WordPress Tested Up To](https://img.shields.io/wordpress/v/post-duplicatex.svg)](https://wordpress.org/plugins/post-duplicatex/)
 [![WordPress Plugin Rating](https://img.shields.io/wordpress/plugin/r/post-duplicatex.svg)](https://wordpress.org/plugins/post-duplicatex/)
 [![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/post-duplicatex.svg)](https://wordpress.org/plugins/post-duplicatex/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+<p align="center">
+<img src="images/icon.svg" alt="Post DuplicateX" height="150"/>
+</p>
 
 **Post DuplicateX** is a powerful WordPress plugin that enables one-click duplication of posts, pages, and custom post types with extensive customization options.
 
