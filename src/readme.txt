@@ -96,7 +96,7 @@ Yes. You can add prefixes (e.g., "Copy of") and/or suffixes to duplicated post t
 == Screenshots ==
 
 1. Main settings page with all customization options
-2. Duplicate link in post list view
+2. Duplicate link in page/post list view
 3. Duplicate button in the classic editor
 4. Duplicate option in the block editor (Gutenberg)
 5. Duplicate button in the admin toolbar
