@@ -1,85 +1,118 @@
-
-=== Post DuplicateX - Advanced Post Duplicator ===
+=== Post DuplicateX - One-Click Content Duplicator for WordPress ===
 Contributors: vishwasr
-Tags: duplicate post, clone post, duplicate page, duplicate custom post, duplicate content
+Donate link: https://example.com/donate
+Tags: duplicate post, clone post, copy post, duplicate page, duplicate custom post type
 Requires at least: 5.0
 Tested up to: 6.8
 Stable tag: 1.0.0
+Requires PHP: 7.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Duplicate posts, pages and custom post types easily with a single click. Save as draft, private, public or pending.
+Effortlessly duplicate posts, pages & custom post types with a single click. Save as draft, private, public, or pending with a powerful, user-friendly interface.
 
 == Description ==
 
-Post DuplicateX is a powerful and user-friendly WordPress plugin that allows you to duplicate any post, page, or custom post type with just a single click. Whether you need to create similar content repeatedly or want to use an existing post as a template, Post DuplicateX saves you time and effort.
+**Post DuplicateX** is the ultimate WordPress solution for efficiently duplicating any content type on your website. With a sleek, intuitive interface and powerful customization options, you can duplicate posts, pages, and custom post types with just one click.
 
-= Key Features =
+### 🚀 Save Time & Boost Productivity
 
-* **Duplicate Any Content**: Duplicate posts, pages, and custom post types with a single click.
-* **Control Post Status**: Save duplicated content as draft, published, private, or pending review.
-* **Flexible Permissions**: Choose which user roles can duplicate content.
-* **Multiple Clone Link Locations**: Add duplicate buttons in post lists, admin bar, classic editor, and block editor.
-* **Post Title Customization**: Add custom prefixes and suffixes to duplicated post titles.
-* **Redirection Options**: Control where users are redirected after duplication.
-* **Fully Customizable**: Extensive settings to tailor the plugin to your needs.
-* **SEO Friendly**: Duplicate content without affecting your SEO negatively.
+Create exact duplicates of your content instantly - perfect for creating templates, making variations of existing content, or testing changes without affecting live pages.
 
-= Use Cases =
+### ✨ Key Features
 
-* Create templates for frequently published content types
-* Test changes on duplicates without affecting live content
-* Build similar posts without starting from scratch
-* Save time when creating content with similar structure
-* Create variations of your existing pages
+* **Universal Content Duplication**: Clone posts, pages, and any custom post type with a single click
+* **Multiple Duplication Points**: Duplicate from post list, admin bar, classic editor or block editor
+* **Flexible Publication Status**: Save duplicates as draft, published, private, or pending review
+* **Role-Based Permissions**: Control which user roles can duplicate content
+* **Customizable Titles**: Add prefixes and suffixes to duplicated content
+* **Smart Redirection**: Choose where to go after duplication (list view, edit screen, or the new post)
+* **Complete Metadata Cloning**: Copies all custom fields, taxonomies, categories, and featured images
+* **Optimized Performance**: Lightweight code that won't slow down your site
+
+### 🛠️ Ultimate Control
+
+Post DuplicateX offers comprehensive settings that allow you to:
+
+1. **Control Access**: Define exactly which user roles can duplicate content
+2. **Select Post Types**: Choose which content types can be duplicated
+3. **Customize Link Placement**: Select where duplicate buttons appear
+4. **Define Post Status**: Set the default publication status for duplicates
+5. **Title Customization**: Add descriptive prefixes/suffixes to distinguish duplicated content
+6. **Navigation Control**: Determine where users land after duplication
+
+### 🔍 Perfect For
+
+* Content creators who publish similar structured posts regularly
+* Website developers creating templates for clients
+* Site owners who want to A/B test content variations
+* Anyone who wants to save time when creating similar content
+
+### 🌟 Professional Workflow Integration
+
+Post DuplicateX seamlessly integrates into your existing WordPress workflow, with duplicate options available wherever you work with content.
 
 == Installation ==
 
 1. Upload the `post-duplicatex` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to Post DuplicateX settings page to configure your preferences
-4. Start duplicating your content with a single click!
+3. Go to the Post DuplicateX settings page to configure your preferences
+4. Start duplicating content with a single click!
 
 == Frequently Asked Questions ==
 
-= Which post types can I duplicate? =
+= Can I duplicate custom post types? =
 
-By default, you can duplicate posts and pages. However, in the plugin settings, you can enable duplication for any public custom post type.
+Yes! Post DuplicateX supports all public custom post types. Simply enable them in the plugin settings.
 
-= Can I control who can duplicate content? =
+= What happens to meta fields and taxonomies when duplicating? =
 
-Yes, you can specify which user roles have permission to duplicate content through the plugin settings page.
+Post DuplicateX intelligently copies all meta data, custom fields, categories, tags, and taxonomies to the duplicated content.
 
-= Where will the duplicate link appear? =
+= Can I control who has permission to duplicate content? =
 
-You can choose where the duplicate link appears in the plugin settings:
-* In the post/page list as a row action
-* In the admin toolbar when viewing or editing a post
+Absolutely. The plugin allows you to specify exactly which user roles have duplication privileges.
+
+= Where will the duplicate links/buttons appear? =
+
+You can choose any combination of these locations:
+* In post/page listings as a row action
+* In the admin toolbar when viewing/editing content
 * In the publish box of the classic editor
-* In the sidebar of the block editor (Gutenberg)
+* In the sidebar panel of the block editor (Gutenberg)
 
-= Can I customize the duplicate post title? =
+= Will the duplicated post have the same published date? =
 
-Yes, you can add custom prefixes and/or suffixes to the duplicated post titles.
+No. The duplicated post will have the current date/time, but you can modify this when editing the duplicated content.
 
-= What happens to post meta, taxonomies, and featured images? =
+= Does it work with page builders like Elementor, Divi, etc? =
 
-Post DuplicateX copies all post meta, taxonomies/categories/tags, and featured images to the duplicated post.
+Yes! Post DuplicateX works with all major page builders by copying all post meta data.
+
+= Can I add custom text to duplicated post titles? =
+
+Yes. You can add prefixes (e.g., "Copy of") and/or suffixes to duplicated post titles for easy identification.
 
 == Screenshots ==
 
-1. Plugin settings page
-2. Duplicate link in post list
-3. Duplicate button in classic editor
-4. Duplicate button in block editor (Gutenberg)
-5. Duplicate option in admin bar
+1. Main settings page with all customization options
+2. Duplicate link in post list view
+3. Duplicate button in the classic editor
+4. Duplicate option in the block editor (Gutenberg)
+5. Duplicate button in the admin toolbar
 
 == Changelog ==
 
 = 1.0.0 =
-* Initial release
+* Initial release with complete duplication functionality
+* Support for all post types
+* Multiple duplication locations
+* Flexible status options
+* Role-based permissions
+* Custom prefixes and suffixes
+* Advanced settings page
 
 == Upgrade Notice ==
 
 = 1.0.0 =
-Initial release
+Initial release - Install Post DuplicateX to start duplicating content with a single click!

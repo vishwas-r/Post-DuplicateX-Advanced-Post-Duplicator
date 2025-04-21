@@ -32,52 +32,8 @@ jQuery(document).ready(function($) {
         $(this).css('box-shadow', 'none');
     });
     
-    // Sticky sidebar on scroll for larger screens
-    // if ($(window).width() > 1100) {
-    //     var sidebarTop = $('.pdx-admin-sidebar').offset().top;
-    //     var footerTop = $('.pdx-footer').offset().top;
-    //     var sidebarHeight = $('.pdx-admin-sidebar').height();
-    //     var adminBarHeight = $('#wpadminbar').height() || 0;
-        
-    //     $(window).scroll(function() {
-    //         var windowTop = $(window).scrollTop() + adminBarHeight + 20;
-    //         var maxTop = footerTop - sidebarHeight - 40;
-            
-    //         if (windowTop > sidebarTop && windowTop < maxTop) {
-    //             $('.pdx-admin-sidebar').css({
-    //                 'position': 'fixed',
-    //                 'top': adminBarHeight + 20 + 'px',
-    //                 'width': $('.pdx-admin-sidebar').width() + 'px'
-    //             });
-    //         } else if (windowTop >= maxTop) {
-    //             $('.pdx-admin-sidebar').css({
-    //                 'position': 'absolute',
-    //                 'top': (maxTop - adminBarHeight) + 'px',
-    //                 'width': $('.pdx-admin-sidebar').width() + 'px'
-    //             });
-    //         } else {
-    //             $('.pdx-admin-sidebar').css({
-    //                 'position': 'static',
-    //                 'top': 'auto',
-    //                 'width': 'auto'
-    //             });
-    //         }
-    //     });
-        
-    //     $(window).resize(function() {
-    //         $('.pdx-admin-sidebar').css({
-    //             'position': 'static',
-    //             'top': 'auto',
-    //             'width': 'auto'
-    //         });
-    //         sidebarTop = $('.pdx-admin-sidebar').offset().top;
-    //         footerTop = $('.pdx-footer').offset().top;
-    //         sidebarHeight = $('.pdx-admin-sidebar').height();
-    //     });
-    // }
-    
     // Form validation before submit
-    $('form').on('submit', function(e) {
+    $('#post-duplicatex-settings-form').on('submit', function(e) {
         // Check if at least one role is selected
         if ($('input[name^="pdx_allowed_roles"]:checked').length === 0) {
             e.preventDefault();
