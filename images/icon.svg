@@ -1,0 +1,29 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="150" cy="150" r="150" fill="#f7f7f7"/>
+  
+  <!-- Main document -->
+  
+  <rect x="80" y="80" width="110" height="140" rx="8" ry="8" fill="#3498db" filter="drop-shadow(2px 2px 2px rgba(0,0,0,0.15))"/>
+  
+  <!-- Document content lines -->
+  <rect x="100" y="110" width="70" height="6" rx="3" ry="3" fill="#ffffff" opacity="0.8"/>
+  <rect x="100" y="130" width="50" height="6" rx="3" ry="3" fill="#ffffff" opacity="0.8"/>
+  <rect x="100" y="150" width="70" height="6" rx="3" ry="3" fill="#ffffff" opacity="0.8"/>
+  <rect x="100" y="170" width="60" height="6" rx="3" ry="3" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Duplicated document (offset) -->
+  <rect x="120" y="60" width="110" height="140" rx="8" ry="8" fill="#2ecc71" filter="drop-shadow(2px 2px 2px rgba(0,0,0,0.15))"/>
+  
+  <!-- Duplicated document content lines -->
+  <rect x="140" y="110" width="70" height="6" rx="3" ry="3" fill="#ffffff" opacity="0.8"/>
+  <rect x="140" y="130" width="50" height="6" rx="3" ry="3" fill="#ffffff" opacity="0.8"/>
+  <rect x="140" y="150" width="70" height="6" rx="3" ry="3" fill="#ffffff" opacity="0.8"/>
+  <rect x="140" y="170" width="60" height="6" rx="3" ry="3" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Text section background -->
+  <rect x="80" y="225" width="150" height="40" rx="5" ry="5" fill="#34495e"/>
+  
+  <!-- PDX text -->
+  <text x="155" y="250" font-family="Arial, sans-serif" font-weight="bold" font-size="18" text-anchor="middle" fill="#ffffff">Post DuplicateX</text>
+</svg>

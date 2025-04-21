@@ -1,6 +1,6 @@
 # Post DuplicateX
 
-![Post DuplicateX Banner](assets/banner-772x250.png)
+![Post DuplicateX](images/icon.png)
 
 [![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/post-duplicatex.svg)](https://wordpress.org/plugins/post-duplicatex/)
 [![WordPress Tested Up To](https://img.shields.io/wordpress/v/post-duplicatex.svg)](https://wordpress.org/plugins/post-duplicatex/)
@@ -59,13 +59,13 @@ After installation and activation:
 
 ## Screenshots
 
-| Settings Page | Post List View |
+| Settings Page | Page/Post List View |
 |:---:|:---:|
-| ![Settings Page](screenshots/screenshot-1.png) | ![Page/Post List](screenshots/screenshot-2.png) |
+| ![Settings Page](images/screenshot-1.png) | ![Page/Post List](images/screenshot-2.png) |
 
 | Classic Editor | Block Editor |
 |:---:|:---:|
-| ![Classic Editor](screenshots/screenshot-3.png) | ![Block Editor](screenshots/screenshot-4.png) |
+| ![Classic Editor](images/screenshot-3.png) | ![Block Editor](images/screenshot-4.png) |
 
 ## Configuration Options
 
