@@ -1,0 +1,65 @@
+
+/* Admin area styles */
+.pdx-admin-container {
+    margin-top: 20px;
+}
+
+.pdx-admin-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.pdx-admin-content {
+    flex: 1;
+    min-width: 66%;
+    padding: 0 15px;
+}
+
+.pdx-admin-sidebar {
+    width: 25%;
+    min-width: 250px;
+    padding: 0 15px;
+}
+
+.pdx-admin-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.pdx-admin-card h2 {
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.pdx-admin-sidebar-widget {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.pdx-admin-sidebar-widget h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.pdx-duplicate-button {
+    margin-right: 5px !important;
+}
+
+@media screen and (max-width: 782px) {
+    .pdx-admin-content,
+    .pdx-admin-sidebar {
+        width: 100%;
+        min-width: 100%;
+    }
+}
