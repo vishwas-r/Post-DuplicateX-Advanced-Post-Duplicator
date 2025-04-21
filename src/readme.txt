@@ -1,6 +1,6 @@
-=== Post DuplicateX - One-Click Content Duplicator for WordPress ===
+=== Post DuplicateX - Advanced Post Duplicator ===
 Contributors: vishwasr
-Donate link: https://example.com/donate
+Donate link: https://www.paypal.com/paypalme/vishwasr92
 Tags: duplicate post, clone post, copy post, duplicate page, duplicate custom post type
 Requires at least: 5.0
 Tested up to: 6.8
