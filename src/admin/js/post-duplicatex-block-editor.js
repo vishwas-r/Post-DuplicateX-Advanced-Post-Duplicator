@@ -9,7 +9,7 @@
         const postType = select('core/editor').getCurrentPostType();
         
         // Check if post type is enabled for duplication
-        if (!pdxBlockEditor.postTypes.includes(postType)) {
+        if (!postdxBlockEditor.postTypes.includes(postType)) {
             return null;
         }
         
@@ -25,7 +25,7 @@
             }
             
             // Create the duplicate URL with proper nonce
-            const duplicateUrl = `${pdxBlockEditor.ajaxURL}?action=pdx_duplicate_post&post=${postId}&_wpnonce=${pdxBlockEditor.nonce}`;
+            const duplicateUrl = `${postdxBlockEditor.ajaxURL}?action=postdx_duplicate_post&post=${postId}&_wpnonce=${postdxBlockEditor.nonce}`;
             
             // Redirect to the duplicate URL
             window.location.href = duplicateUrl;
@@ -39,9 +39,9 @@
                 {
                     isSecondary: true,
                     onClick: handleClick,
-                    className: 'pdx-duplicate-button'
+                    className: 'postdx-duplicate-button'
                 },
-                pdxBlockEditor.linkTitle
+                postdxBlockEditor.linkTitle
             )
         );
     }

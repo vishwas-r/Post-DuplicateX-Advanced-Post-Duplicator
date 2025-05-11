@@ -1,7 +1,7 @@
 
 <?php
 
-class Post_DuplicateX51_Loader {
+class PostDX51_Loader {
     protected $actions;
     protected $filters;
 

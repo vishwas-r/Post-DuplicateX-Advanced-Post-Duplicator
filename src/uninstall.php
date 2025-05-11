@@ -7,14 +7,14 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
 
 // Delete plugin options
 $options = array(
-    'pdx_allowed_roles',
-    'pdx_post_types',
-    'pdx_link_location',
-    'pdx_post_status',
-    'pdx_redirect',
-    'pdx_link_title',
-    'pdx_post_prefix',
-    'pdx_post_suffix',
+    'postdx_allowed_roles',
+    'postdx_post_types',
+    'postdx_link_location',
+    'postdx_post_status',
+    'postdx_redirect',
+    'postdx_link_title',
+    'postdx_post_prefix',
+    'postdx_post_suffix',
 );
 
 foreach ($options as $option) {

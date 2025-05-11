@@ -16,28 +16,28 @@ if (!defined('WPINC')) {
     die;
 }
 
-define('POST_DUPLICATEX_VERSION', '1.0.0');
-define('POST_DUPLICATEX_PLUGIN_DIR', plugin_dir_path(__FILE__));
-define('POST_DUPLICATEX_PLUGIN_URL', plugin_dir_url(__FILE__));
+define('POSTDX51_VERSION', '1.0.0');
+define('POSTDX51_PLUGIN_DIR', plugin_dir_path(__FILE__));
+define('POSTDX51_PLUGIN_URL', plugin_dir_url(__FILE__));
 
-register_activation_hook(__FILE__, 'activate_post_duplicatex51');
-register_deactivation_hook(__FILE__, 'deactivate_post_duplicatex51');
+register_activation_hook(__FILE__, 'postdx51_activate');
+register_deactivation_hook(__FILE__, 'postdx51_deactivate');
 
-function activate_post_duplicatex51() {
-    require_once POST_DUPLICATEX_PLUGIN_DIR . 'includes/class-post-duplicatex-activator.php';
-    Post_DuplicateX51_Activator::activate();
+function postdx51_activate() {
+    require_once POSTDX51_PLUGIN_DIR . 'includes/class-post-duplicatex-activator.php';
+    PostDX51_Activator::activate();
 }
 
-function deactivate_post_duplicatex51() {
-    require_once POST_DUPLICATEX_PLUGIN_DIR . 'includes/class-post-duplicatex-deactivator.php';
-    Post_DuplicateX51_Deactivator::deactivate();
+function postdx51_deactivate() {
+    require_once POSTDX51_PLUGIN_DIR . 'includes/class-post-duplicatex-deactivator.php';
+    PostDX51_Deactivator::deactivate();
 }
 
-require POST_DUPLICATEX_PLUGIN_DIR . 'includes/class-post-duplicatex.php';
+require POSTDX51_PLUGIN_DIR . 'includes/class-post-duplicatex.php';
 
-function run_post_duplicatex51() {
-    $plugin = new Post_DuplicateX51();
+function postdx51_run() {
+    $plugin = new PostDX51();
     $plugin->run();
 }
 
-run_post_duplicatex51();
+postdx51_run();
